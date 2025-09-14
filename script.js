@@ -10,3 +10,13 @@ let cid = [
   ['TWENTY', 60],
   ['ONE HUNDRED', 100]
 ];
+
+const cashInput = document.getElementById('cash');
+const changeDue = document.getElementById('change-due');
+const purchaseBtn = document.getElementById('purchase-btn');
+
+const calculateChange = (cash) => {
+    changeDue.innerText = "test";
+};
+
+purchaseBtn.addEventListener("click", calculateChange(cashInput.value));
